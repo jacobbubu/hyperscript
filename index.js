@@ -91,7 +91,7 @@ function context () {
                     e.style.setProperty(s, val)
                   }))
                 } else
-                  var match = l[k][s].match(/(.*)\W+!important\W*$/);
+                  var match = l[k][s].toString().match(/(.*)\W+!important\W*$/);
                   if (match) {
                     e.style.setProperty(s, match[1], 'important')
                   } else {
